@@ -1,0 +1,167 @@
+!
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.png" type="favicon">
+  <title>Sou Doador - Campina Grande</title>
+
+  <!--CSS-->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/grid.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/patterns.css">
+
+
+</head>
+
+<body>
+  <div class="container-doacao">
+
+    <!--HEADER-->
+    <header>
+      <!--CONTAINER MAX-WIDTH 124.6REM-->
+      <div class="container">
+        <!--LOGO-->
+        <a href="./" class="logo">
+          <img src="img/sou-doador-logo.png" alt="">
+        </a>
+
+        <!--MENU NAV-->
+        <nav>
+          <ul>
+            <li><a class="menu-item" href="index.html">Início</a></li>
+            <li><a class="menu-item" href="sobre.html">Sobre</a></li>
+            <li><a class="menu-item" href="pqdoar.html">Por que doar ?</a></li>
+            <li><a class="btn-primary" href="contato.html">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <aside class="side-bar">
+      <div class="container">
+        <div class="container-side-bar">
+          <h3 class="menu">Menu</h3>
+          <ul>
+						<li>
+							<a class="logado-item menu-item" href="./cadastrar-doacao.html">Cadastrar Doação</a>
+						</li>
+						<li>
+							<a class="logado-item menu-item" href="./pessoas-cadastradas.html">Controle de Pessoas</a>
+						</li>
+						<li><a class="logado-item menu-item" href="#">Doações</a></li>
+						<li>
+							<a class="logado-item menu-item sair" href="index.html">Sair</a>
+						</li>
+					</ul>
+          </ul>
+        </div>
+      </div>
+    </aside>
+
+    <div class="cadastrar-doacao">
+      <form action="">
+        <h2 style="margin-bottom: 2rem;">Cadastrar Doação</h3>
+
+          <!--NOME-->
+          <input class="nome form-cadastro" type="text" name="nome" placeholder="Nome">
+
+          <!--TELEFONE-->
+          <input class="telefone form-cadastro" type="tel" name="telefone" placeholder="Telefone">
+
+          <!--GÊNERO-->
+          <div class="genero-container" >
+            <p style="font-size: 2.1rem; font-weight: 500;">Gênero:</p>
+            <div class="genero-texto" >
+              <input type="radio"  name="genero" value="masculino" >
+                <label for="masculino">Masculino</label><br>
+          
+              <input type="radio"  name="genero" value="feminino">
+                <label for="feminino">Feminino</label><br>
+            </div>
+          </div>
+
+          <!--CPF-->
+          <input class="cpf form-cadastro" type="text" name="cpf" placeholder="CPF">
+
+          <!--CPF-->
+          <input class="dataDeNascimento form-cadastro" type="text" name="dataNascimento"
+            placeholder="DATA DE NASCIMENTO">
+
+          <!--TIPO SANGUÍNEO-->
+          <div class="tipo-sanguineo" style="width:230px; border: 2px solid grey;">
+            <select name="tipos" id="tipo">
+              <option value="0">Selecione o tipo sanguíneo:</option>
+              <option value="1">A+</option>
+              <option value="2">B+</option>
+              <option value="3">AB+</option>
+              <option value="4">O+</option>
+              <option value="5">A-</option>
+              <option value="6">B-</option>
+              <option value="7">AB-</option>
+              <option value="8">O-</option>
+            </select>
+          </div>
+
+          <!--DOAR-->
+          <button type="submit" class="btn-doar">
+          Registrar Doação
+          </button>
+
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
+
+<script>
+
+const formulario = document.querySelector("form")
+const Inome = document.querySelector(".nome")
+const Itelefone = document.querySelector('.telefone')
+const Igenero = document.querySelector("input[name=genero]:checked")
+const Icpf = document.querySelector('.cpf')
+const ItipoSanguineo = document.getElementById('tipo')
+const IdataDeNascimento = document.querySelector('.dataDeNascimento')
+
+function cadastrar() {
+  fetch("http://localhost:8080/cadastrar",
+  {
+    headers: {
+      'accept': 'application/json',
+      'Content-Type': 'application/json'
+    },
+    method: "POST",
+    body: JSON.stringify({Inome: Inome.value,
+    Itelefone:Itelefone.value,
+   //Igenero:Igenero.value,
+    Icpf:Icpf.value,
+    ItipoSanguineo: ItipoSanguineo.options[ItipoSanguineo.selectedIndex].text,
+    IdataDeNascimento:IdataDeNascimento.value,})
+
+  })
+  .then(function (res) {console.log(res)})
+  .catch(function (res) {console.log(res)})
+}
+
+function limpar() {
+    Inome.value = "" ;
+    Itelefone.value = "";
+    //Ignero Igenero.value = "";
+    Icpf.value = "",
+    ItipoSanguineo.options[ItipoSanguineo.selectedIndex].text = "Selecione o tipo sanguíneo:";
+    IdataDeNascimento.value = "";
+};
+
+formulario.addEventListener('submit', function (event) {
+  event.preventDefault() 
+  cadastrar()
+  limpar()
+})
+</script>

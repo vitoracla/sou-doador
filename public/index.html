@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+  <title>Sou Doador - Campina Grande</title>
+
+  <!--FONTS-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Sora:wght@400;600&display=swap"
+    rel="stylesheet">
+
+  <!--CSS-->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/grid.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/patterns.css">
+
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+  <!--HEADER-->
+  <header>
+    <!--CONTAINER MAX-WIDTH 124.6REM-->
+    <div class="container">
+      <!--LOGO-->
+      <a href="./" class="logo">
+        <img src="img/sou-doador-logo.png" alt="">
+      </a>
+
+      <!--MENU NAV-->
+      <nav>
+        <ul>
+          <li><a class="menu-item" href="index.html">Início</a></li>
+          <li><a class="menu-item" href="sobre.html">Sobre</a></li>
+          <li><a class="menu-item" href="pqdoar.html">Por que doar ?</a></li>
+          <li><a class="btn-primary" href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!--SECTION LOGIN-->
+  <section class="section-login">
+    <!--CONTAINER MAX-WIDTH 124.6REM-->
+    <div class="container">
+
+      <!--FORMULÁRIO LOGIN-->
+      <div class="formulario">
+        <h2>Faça o Login</h2>
+
+        <!--FORMULÁRIO-->
+        <form>
+          <!--ID HEMOCENTRO-->
+          <label for="idHemocentro"></label>
+          <input type="text" name="idHemocentro" id="idHemocentro" placeholder="ID do Hemocentro" />
+
+          <!--BTN LOGIN-->
+          <button type="submit" onclick="logar()" class="btn-login">
+            <a href="logado.html">Entrar</a>
+          </button>
+        </form>
+
+        <!--ESQUECEU SENHA E CADASTRO-->
+        <ul class="esqueceu-senha">
+          <li>
+            Esqueceu a
+            <a href="esqueceu-senha.html" style="color: #B31841">senha?</a>
+          </li>
+          <li>
+            Não tem conta?
+            <a href="cadastro.html" style="color: #B31841">Criar</a>
+          </li>
+        </ul>
+      </div>
+
+      <!--IMAGEM BANNER-->
+      <div class="imagem">
+        <img src="img/login-image.jpg" alt="">
+      </div>
+
+    </div>
+  </section>
+
+  <!--FOOTER-->
+  <footer>
+    <p>&copy; Hemocentro Campina Grande</p>
+  </footer>
+</body>
+
+</html>

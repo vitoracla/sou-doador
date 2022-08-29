@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Tela pessoas contratadas</title>
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="css/pessoasCadastradas.css" />
+		<link rel="stylesheet" href="css/variables.css" />
+		<link rel="stylesheet" href="css/grid.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/patterns.css" />
+		<link rel="stylesheet" href="css/modal.css" />
+	</head>
+
+	<body>
+		<div class="conteiner-cadastro">
+		<!--HEADER-->
+		<header>
+			<!--CONTAINER MAX-WIDTH 124.6REM-->
+			<div class="container">
+				<!--LOGO-->
+				<a href="./" class="logo">
+					<img src="img/sou-doador-logo.png" alt="" />
+				</a>
+
+				<!--MENU NAV-->
+				<nav>
+					<ul>
+						<li><a class="menu-item" href="index.html">Início</a></li>
+						<li><a class="menu-item" href="sobre.html">Sobre</a></li>
+						<li><a class="menu-item" href="pqdoar.html">Por que doar ?</a></li>
+						<li><a class="btn-primary" onclick="openModal('modal-contato')">Contato</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<aside class="side-bar">
+			<div class="container">
+			  <div class="container-side-bar">
+				<h3 class="menu">Menu</h3>
+				<ul>
+							  <li>
+								  <a class="logado-item menu-item" href="./cadastrar-doacao.html">Cadastrar Doação</a>
+							  </li>
+							  <li>
+								  <a class="logado-item menu-item" href="./pessoas-cadastradas.html">Controle de Pessoas</a>
+							  </li>
+							  <li><a class="logado-item menu-item" href="#">Doações</a></li>
+							  <li>
+								  <a class="logado-item menu-item sair" href="index.html">Sair</a>
+							  </li>
+						  </ul>
+				</ul>
+			  </div>
+			</div>
+		  </aside>
+
+		<main class="cards container-cards">
+	
+			<section class="card contact">
+				<h3>VÍTOR AQUINO</h3>
+				<span>TIPO SANGUINEO: B+</span>
+				<span>DATA DE NASCIMENTO: 14/08/1996</span>
+				<span>CIDADE: Campina Grande</span>
+				<button onclick="openModal('modal-contato')">Entrar em contato</button>
+			</section>
+			<section class="card contact">
+				<h3>ARTHUR</h3>
+				<span>TIPO SANGUINEO: A-</span>
+				<span>DATA DE NASCIMENTO: 16/03/1987</span>
+				<span>CIDADE: Cajazeiras</span>
+				<button onclick="openModal('modal-contato')">Entrar em contato</button>
+			</section>
+			<section class="card contact">
+				<h3>ENZO RAIAN</h3>
+				<span>TIPO SANGUINEO: AB+</span>
+				<span>DATA DE NASCIMENTO: 27/11/2000</span>
+				<span>CIDADE: Sousa</span>
+				<button onclick="openModal('modal-contato')">Entrar em contato</button>
+			</section>
+			<section class="card contact">
+				<h3>MARIA FERNANDA SALES</h3>
+				<span>TIPO SANGUINEO: B+</span>
+				<span>DATA DE NASCIMENTO: 14/08/1996</span>
+				<span>CIDADE: Campina Grande</span>
+				<button onclick="openModal('modal-contato')">Entrar em contato</button>
+			</section>
+			<section class="card contact">
+				<h3>CLEDNA BORBOREMA</h3>
+				<span>TIPO SANGUINEO: A-</span>
+				<span>DATA DE NASCIMENTO: 16/03/1987</span>
+				<span>CIDADE: Cajazeiras</span>
+				<button onclick="openModal('modal-contato')">Entrar em contato</button>
+			</section>
+			<section class="card contact">
+				<h3>LUCIANA WANDERLEY</h3>
+				<span>TIPO SANGUINEO: AB+</span>
+				<span>DATA DE NASCIMENTO: 27/11/2000</span>
+				<span>CIDADE: Esperança</span>
+				<button onclick="openModal('modal-contato')">Entrar em contato</button>
+			</section>
+			<section class="card contact">
+				<h3>TOVAR CORREIA LIMA</h3>
+				<span>TIPO SANGUINEO: A-</span>
+				<span>DATA DE NASCIMENTO: 16/03/1987</span>
+				<span>CIDADE: Cajazeiras</span>
+				<button onclick="openModal('modal-contato')">Entrar em contato</button>
+			</section>
+			<section class="card contact">
+				<h3>FERNANDO VASCONCELOS</h3>
+				<span>TIPO SANGUINEO: O+</span>
+				<span>DATA DE NASCIMENTO: 27/11/2000</span>
+				<span>CIDADE: Patos</span>
+				<button onclick="openModal('modal-contato')">Entrar em contato</button>
+			</section>
+			<section class="card contact">
+				<h3>LORENA CORREIA LIMA</h3>
+				<span>TIPO SANGUINEO: A-</span>
+				<span>DATA DE NASCIMENTO: 19/09/1991</span>
+				<span>CIDADE: Cajazeiras</span>
+				<button onclick="openModal('modal-contato')">Entrar em contato</button>
+			</section>
+			<section class="card contact">
+				<h3>AMANDA CASTELO BRANCO</h3>
+				<span>TIPO SANGUINEO: AB+</span>
+				<span>DATA DE NASCIMENTO: 27/11/2000</span>
+				<span>CIDADE: Sousa</span>
+				<button onclick="openModal('modal-contato')">Entrar em contato</button>
+			</section>
+			<section class="card contact">
+				<h3>VÍTOR AQUINO</h3>
+				<span>TIPO SANGUINEO: B+</span>
+				<span>DATA DE NASCIMENTO: 14/08/1996</span>
+				<span>CIDADE: Campina Grande</span>
+				<button onclick="openModal('modal-contato')">Entrar em contato</button>
+			</section>
+			<section class="card contact">
+				<h3>ARTHUR</h3>
+				<span>TIPO SANGUINEO: A-</span>
+				<span>DATA DE NASCIMENTO: 16/03/1987</span>
+				<span>CIDADE: Cajazeiras</span>
+				<button onclick="openModal('modal-contato')">Entrar em contato</button>
+			</section>
+			<section class="card contact">
+				<h3>ENZO RAIAN</h3>
+				<span>TIPO SANGUINEO: AB+</span>
+				<span>DATA DE NASCIMENTO: 27/11/2000</span>
+				<span>CIDADE: Sousa</span>
+				<button onclick="openModal('modal-contato')">Entrar em contato</button>
+			</section>
+			<section class="card contact">
+				<h3>MARIA FERNANDA SALES</h3>
+				<span>TIPO SANGUINEO: B+</span>
+				<span>DATA DE NASCIMENTO: 14/08/1996</span>
+				<span>CIDADE: Campina Grande</span>
+				<button onclick="openModal('modal-contato')">Entrar em contato</button>
+			</section>
+			<section class="card contact">
+				<h3>CLEDNA BORBOREMA</h3>
+				<span>TIPO SANGUINEO: A-</span>
+				<span>DATA DE NASCIMENTO: 16/03/1987</span>
+				<span>CIDADE: Cajazeiras</span>
+				<button onclick="openModal('modal-contato')">Entrar em contato</button>
+			</section>
+			
+		</div>
+	
+			<div id="modal-contato" class="modal">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h1>Contato do doador</h1>
+					</div>
+
+					<div class="modal-body">
+						<p>
+							<span>WHATSAPP: 83 998083450</span><br />
+							<span>EMAIL: vitor.a.quino@ccc.ufcg.edu.br</span><br />
+							<span>ENDEREÇO: Clementino siqueira, 482, Campina Grande</span>
+						</p>
+					</div>
+
+					<div class="modal-footer">
+						<button class="btn" onclick="closeModal('modal-contato')">
+							Fechar
+						</button>
+					</div>
+				</div>
+			</div>
+
+			<script src="script.js"></script>
+		</div>
+		</main>
+	</body>
+</html>
+<script>
+	function openModal(mn) {
+		let modal = document.getElementById(mn);
+
+		if (typeof modal == 'undefined' || modal === null) return;
+
+		modal.style.display = 'Block';
+		document.body.style.overflow = 'hidden';
+	}
+
+	function closeModal(mn) {
+		let modal = document.getElementById(mn);
+
+		if (typeof modal == 'undefined' || modal === null) return;
+
+		modal.style.display = 'none';
+		document.body.style.overflow = 'auto';
+	}
+</script>
+<style lang="css">
+	.wrapper{
+		  background: #F6F9FF;
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #434343;
+
+    font-size: 16px;
+	}
+</style>

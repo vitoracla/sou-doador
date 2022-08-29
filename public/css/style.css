@@ -1,0 +1,298 @@
+header {
+  background: var(--gray-colors-800);
+  height: 8.8rem;
+  display: flex;
+
+  /*menu fixed*/
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .container img {
+  width: 10rem;
+}
+
+nav {}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li:not(:last-child) {
+  margin-right: 2rem;
+}
+
+.section-login {
+  padding: 7.2rem 0;
+  margin-top: 8.8rem;
+  /*altura do header fixed*/
+  display: flex;
+  align-items: center;
+  height: 85.1vh;
+  /***********************************************/
+}
+
+.section-login .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.section-login .container .formulario h2 {
+  font-size: 4.2rem;
+  margin-bottom: 2rem;
+}
+
+.section-login .container .formulario #idHemocentro {
+  width: 100%;
+  border: 1px solid grey;
+  border-radius: 0.2rem;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.section-login .container .formulario .btn-login {
+  width: 100%;
+  display: block;
+  background: #B31841;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 0.8rem;
+  border-radius: 0.4rem;
+  margin-bottom: 1.6rem;
+}
+
+.section-login .container .formulario .btn-login a {
+  color: white;
+}
+
+.section-login .container .formulario .esqueceu-senha {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.6rem;
+  text-align: center;
+}
+
+.section-login .container .imagem {
+  width: 50rem;
+}
+
+footer {
+  background-color: #B31841;
+  color: white;
+  padding: 1.8rem;
+  text-align: center;
+}
+
+footer p {
+  font-weight: 400;
+}
+
+.section-pqdoar {
+  padding: 7.2rem 0;
+  margin-top: 5.8rem;
+}
+
+.section-pqdoar h3 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.section-pqdoar .container .descricao {
+  text-align: justify;
+  line-height: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.section-pqdoar .container .descricao-lista {
+  padding-left: 4rem;
+}
+
+.section-pqdoar .container .descricao-lista li {
+  list-style-type: disc;
+}
+
+.section-senha {
+  padding: 7.2rem 0;
+  margin-top: 5.8rem;
+
+}
+
+.section-senha .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 73.4vh;
+  /***********************************************/
+}
+
+.section-senha .texto {
+  width: 50rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.img-esqueceu-senha {
+  display: flex;
+  justify-content: center;
+}
+
+.img-esqueceu-senha img {
+  width: 13rem;
+  margin-bottom: 1.8rem;
+}
+
+.section-senha .container .texto {
+  display: flex;
+  text-align: center;
+}
+
+.section-senha .container .texto h2 {
+  margin-bottom: 1rem;
+}
+
+.section-senha .container .formulario {
+  width: 40rem;
+}
+
+.section-senha .container .formulario #idHemocentro {
+  width: 100%;
+  border: 1px solid grey;
+  border-radius: 0.2rem;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.section-senha .container .formulario .btn-login {
+  width: 100%;
+  display: block;
+  background: #B31841;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 0.8rem;
+  border-radius: 0.4rem;
+  margin-bottom: 1.6rem;
+}
+
+.section-senha .container .formulario .btn-login a {
+  color: white;
+}
+
+.section-senha .container .texto .texto-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.form-cadastro {
+  width: 100%;
+  border: 1px solid grey;
+  border-radius: 0.2rem;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.section-senha .container .formulario .form-cadastro {
+  width: 100%;
+  border: 1px solid grey;
+  border-radius: 0.2rem;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.side-bar .container .container-side-bar {
+  width: 100%;
+  max-width: 24.6rem;
+  padding: 0 1.5rem;
+
+  margin-top: 9rem;
+  background: #B31841;
+  height: 57rem;
+}
+
+.side-bar .container .container-side-bar .menu {
+  color: white;
+  font-weight: 500;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.side-bar .container .container-side-bar ul {
+  padding-top: 1rem;
+}
+
+.side-bar .container .container-side-bar .logado-item {
+  display: block;
+  background: var(--gray-color-50);
+  padding: 1.4rem 0.4rem;
+  margin: 1rem;
+  border-radius: 0.4rem;
+  text-align: center;
+}
+
+.side-bar .container .container-side-bar .logado-item:hover {
+  background: #acb4bf;
+  color: var(--white);
+}
+
+.side-bar .container .container-side-bar .sair:hover {
+  color: red;
+}
+
+.container-doacao {
+  display: flex;
+  gap: 2rem;
+}
+.conteiner-cadastro {
+  display: flex;
+  gap: 2rem;
+  margin-top: -159px;
+}
+
+.cadastrar-doacao {
+  margin-top: 9rem;
+}
+
+.genero-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.genero-texto {
+  display: flex;
+  align-items: center;
+}
+
+.btn-doar {
+  width: 100%;
+  display: block;
+  background: #B31841;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 0.8rem;
+  border-radius: 0.4rem;
+  margin-bottom: 1.6rem;
+  margin-top: 2rem;
+}
+
+.btn-doar a {
+  color: white;
+}

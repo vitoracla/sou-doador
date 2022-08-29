@@ -1,0 +1,9 @@
+.container {
+  width: 100%;
+  /*total: 1440px - 224px(112direita, 112esquerda) = 1216px + 30px padding(direita,esquerda)*/
+  max-width: 124.6rem;
+  margin: 0 auto;
+
+  /*padding respiro mobile - padrão 15px direita e esquerda*/
+  padding: 0 1.5rem;
+}
